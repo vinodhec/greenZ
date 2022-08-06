@@ -44,21 +44,7 @@ const Header: React.FunctionComponent<HeaderComponentProps> = (props) => {
         color: '#fff',
         onPress: navigation.openDrawer,
       }}
-      rightComponent={
-        props.view && (
-          <View style={styles.headerRight}>
-            <TouchableOpacity onPress={docsNavigate}>
-              <Icon name="description" color="white" />
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={{ marginLeft: 10 }}
-              onPress={playgroundNavigate}
-            >
-              <Icon type="antdesign" name="rocket1" color="white" />
-            </TouchableOpacity>
-          </View>
-        )
-      }
+     
       centerComponent={{ text: props.title, style: styles.heading }}
     />
   );

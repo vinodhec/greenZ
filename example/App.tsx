@@ -5,13 +5,14 @@ import AppLoading from './src/components/AppLoading';
 import { cacheImages, cacheFonts } from './src/helpers/AssetsCaching';
 import vectorFonts from './src/helpers/vector-fonts';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { LogBox } from 'react-native';
 
+LogBox.ignoreLogs(['Setting a timer']);
 export default () => {
   const [isReady, setIsReady] = useState(false);
 
   const loadAssetsAsync = async () => {
     const imageAssets = cacheImages([
-      require('./assets/images/bg_screen1.jpg'),
       require('./assets/images/bg_screen2.jpg'),
       require('./assets/images/bg_screen3.jpg'),
       require('./assets/images/bg_screen4.jpg'),
@@ -59,10 +60,10 @@ export default () => {
 
 const theme = createTheme({
   lightColors: {
-    primary: '#3d5afe',
+    primary: '#00a152',
   },
   darkColors: {
-    primary: '#3d5afe',
+    primary: '#00a152',
   },
   mode: 'dark',
   components: {

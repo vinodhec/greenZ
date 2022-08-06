@@ -9,6 +9,7 @@ import {
 import { Text, Divider, Switch, useTheme } from '@rneui/themed';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useColorScheme } from 'react-native-appearance';
+import { SubHeader } from '../components/header';
 
 function CustomContentComponent(
   props: DrawerContentComponentProps<DrawerContentOptions>
@@ -35,11 +36,7 @@ function CustomContentComponent(
           alignItems: 'center',
         }}
       >
-        <Image
-          source={require('../images/logo.png')}
-          style={{ width: '70%', height: 100, tintColor: '#397af8' }}
-          resizeMode="contain"
-        />
+          <SubHeader title="Greenz" containerStyle={{backgroundColor:theme.colors.primary}} />
       </View>
 
       <View

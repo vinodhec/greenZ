@@ -70,7 +70,11 @@ function RootNavigator() {
           backgroundColor: theme?.colors?.grey4,
         }}
       >
-        <Drawer.Screen name="Avatars" component={Avatars} />
+        <Drawer.Screen name="Add Items" component={Inputs} />
+      
+        <Drawer.Screen name="Manage Items" component={Lists2} />
+
+        {/* <Drawer.Screen name="Avatars" component={Avatars} />
         <Drawer.Screen name="Badge" component={Badge} />
         <Drawer.Screen name="BottomSheet" component={BottomSheet} />
         <Drawer.Screen name="Buttons" component={Buttons} />
@@ -100,7 +104,7 @@ function RootNavigator() {
         <Drawer.Screen name="Theme" component={Theme} />
         <Drawer.Screen name="Tiles" component={Tiles} />
         <Drawer.Screen name="Tooltip" component={Tooltip} />
-        <Drawer.Screen name="Whatsapp Clone" component={WhatsappClone} />
+        <Drawer.Screen name="Whatsapp Clone" component={WhatsappClone} /> */}
       </Drawer.Navigator>
     </NavigationContainer>
   );
